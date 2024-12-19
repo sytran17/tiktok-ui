@@ -19,7 +19,7 @@ import Button from '~/components/Button';
 import styles from './Header.module.scss';
 import images from '~/assets/images';
 import Menu from '~/components/Popper/Menu';
-import { InboxIcon, MessageIcon, UploadIcon } from '~/components/Icon';
+import { InboxIcon, MessageIcon, UploadIcon } from '~/components/Icons';
 import Image from '~/components/Image';
 import Search from '../Search';
 
@@ -133,7 +133,7 @@ function Header() {
                         {currentUser ? (
                             <Image
                                 className={cx('user-avatar')}
-                                src="https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-giso/fab2793ceb50f80d8fe1a8aaa8a21c76~c5_720x720.jpeg?lk3s=a5d48078&nonce=90067&refresh_token=8988fe7621df0def00638aa7a7369754&x-expires=1734184800&x-signature=Tw6zoMgH0AwNwDc%2FXubXJzagjSE%3D&shp=a5d48078&shcp=81f88b70"
+                                src="https://p16-sign-sg.tiktokcdn.com/aweme/720x720/tos-alisg-avt-0068/9ad4880ab49a307c5b6d0dfb24b8eb2e.jpeg?lk3s=a5d48078&nonce=15447&refresh_token=30a6b88307aadf5a0ff3531e71b12f55&x-expires=1734793200&x-signature=rvvkEqdiOMxmirPfer0%2BUuVScU8%3D&shp=a5d48078&shcp=81f88b70"
                                 alt="Nguyen Van A"
                             />
                         ) : (
