@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import { faCircleXmark, faSpinner } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import HealessTippy from '@tippyjs/react/headless';
+import HeadlessTippy from '@tippyjs/react/headless';
 import classNames from 'classnames/bind';
 
 import * as searchServices from '~/services/searchService';
@@ -64,7 +64,7 @@ function Search() {
         //Using a wrapper <div> or <span> tag around the reference element solves
         // this by creating a new parentNode context.
         <div>
-            <HealessTippy
+            <HeadlessTippy
                 interactive
                 appendTo={() => document.body}
                 visible={showResult && searchResult.length > 0}
@@ -73,7 +73,7 @@ function Search() {
                         <PopperWrapper>
                             <h4 className={cx('search-title')}>Accounts</h4>
                             {searchResult.map((result) => (
-                                <AccountItem key={result.id} data={result} />
+                                <AccountItem key={result.id} data={true} />
                             ))}
                         </PopperWrapper>
                     </div>
@@ -100,7 +100,7 @@ function Search() {
                         <SearchIcon />
                     </button>
                 </div>
-            </HealessTippy>
+            </HeadlessTippy>
         </div>
     );
 }
